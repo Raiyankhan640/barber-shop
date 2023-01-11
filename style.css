@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+/* Header Styles */
+header{
+    margin-bottom: 100px;
+}
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #8b161a), url(/images/banner.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    width: 140px;
+    top: 4%;
+    left: 10%;
+}
+
+.banner-text {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 100px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.b-dis {
+    margin-top: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin: 40px auto 0;
+    gap: 30px;
+}
+
+.btn a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    border: .5px solid white;
+    text-align: center;
+    margin: 0px 20px;
+    padding: 13px 0px;
+    color: white;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.6s;
+}
+
+.btn a:hover span {
+    width: 100%;
+
+}
+
+.btn a:hover {
+    color: black;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.2rem;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 90vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.side-nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+.side-nav ul a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+.features{
+    text-align: center;
+    margin-bottom: 30px;
+}
