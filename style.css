@@ -5,10 +5,12 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
 }
+
 /* Header Styles */
-header{
-    margin-bottom: 100px;
+header {
+    margin-bottom: 80px;
 }
+
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), #8b161a), url(/images/banner.jpg);
     height: 100vh;
@@ -110,9 +112,84 @@ header{
 .side-nav ul a {
     text-decoration: none;
     color: white;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'poppins', cursive;
+    transition: 0.3s;
 }
-.features{
+
+.side-nav ul a:hover {
+    font-size: 1.4rem;
+    font-family: 'Kaushan Script', cursive;
+    color: #ff9a9d;
+    position: relative;
+    margin-left: 5px;
+}
+
+/* Main Contents */
+.s-title {
+    font-size: 2.5rem;
+}
+
+.s-text {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.s-logo {
+    color: #c81313;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.s-logo::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(#9e1f1f, #fff);
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.features {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    width: 80%;
+    height: 80vh;
+    margin-bottom: 80px;
+    position: relative;
+    margin-inline: auto;
+    margin-bottom: 80px;
+}
+
+.f-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.f-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #a45658), url(/images/barber-man.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.f-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.f-dis {
+    font-weight: bold;
+}
+.f-box{
+    display: grid;
+    grid-template-columns: .1fr 1.9fr;
 }
