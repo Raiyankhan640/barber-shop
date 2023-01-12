@@ -142,7 +142,8 @@ header {
     position: relative;
     z-index: 1;
 }
-.s-logo::after{
+
+.s-logo::after {
     content: '';
     width: 50px;
     height: 35px;
@@ -155,6 +156,7 @@ header {
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
+
 .features {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -189,7 +191,67 @@ header {
 .f-dis {
     font-weight: bold;
 }
-.f-box{
+
+.f-box {
     display: grid;
     grid-template-columns: .1fr 1.9fr;
+}
+
+.service {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background: #fff1f1; */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), #ffe2e3);
+    margin-bottom: 80px;
+}
+
+.s-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+.testimonial{
+    margin-bottom: 80px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), #ffe2e3);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    height: 80vh;
+    margin-inline: auto;
+}
+.review{
+    background-color: #8b161a;
+}
+/* Footer Styles */
+.ftr{
+    width: 80%;
+    height: auto;
+    margin-inline: auto;
+}
+.f-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    height: 40vh;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.fc-1{
+}
+.fc-2{
+    text-align: right;
+    /* margin-top: 30px; */
+}
+.sc-img{
+    margin-bottom: 10px;
 }
