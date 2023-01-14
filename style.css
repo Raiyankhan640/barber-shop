@@ -171,7 +171,8 @@ header {
 .f-1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    row-gap: 40px;
+    justify-content: center;
 }
 
 .f-2 {
@@ -201,7 +202,7 @@ header {
     padding-top: 40px;
     padding-bottom: 40px;
     /* background: #fff1f1; */
-    background: linear-gradient(rgba(255, 255, 255, 0.5), #ffe2e3);
+    /* background: linear-gradient(rgba(255, 255, 255, 0.5), #ffe2e3); */
     margin-bottom: 80px;
 }
 
@@ -212,7 +213,9 @@ header {
     width: 80%;
     margin-inline: auto;
     margin-bottom: 50px;
+    gap: 20px;
 }
+
 .testimonial{
     margin-bottom: 80px;
     background: linear-gradient(rgba(255, 255, 255, 0.5), #ffe2e3);
@@ -239,19 +242,36 @@ header {
 .f-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
-    height: 40vh;
+    margin-top: 80px;
+    height: 30vh;
 }
 .social{
     display: flex;
     justify-content: center;
+    height: 50px;
+    align-items: center;
+    gap: 30px;
 }
+
 .fc-1{
 }
 .fc-2{
     text-align: right;
-    /* margin-top: 30px; */
 }
 .sc-img{
     margin-bottom: 10px;
+}
+.f-box .f-icon i{
+    margin-top: 25px;
+}
+.fc-1 h1{
+    margin-bottom: 10px;
+}
+.f-text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.f-text i{
+    margin-right: 10px;
 }
